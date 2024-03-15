@@ -37,3 +37,4 @@ public class UniqueCharacter {
 
 
 The Problem URL is https://leetcode.com/problems/first-unique-character-in-a-string/description/
+
