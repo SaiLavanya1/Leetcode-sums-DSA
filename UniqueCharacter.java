@@ -28,3 +28,12 @@ public class UniqueCharacter {
         }
     }
 }
+
+
+//As per my understanding 
+//Time - O(N) -> Traversed to put the characters in hashmap O(N) , finding index in lesser frequency in hashmap O(N) -> so tatal is O(N)
+//Space - O(N) -> which we using hashmap but here we string is charcaters i.e., english alphabets so for hashmap the default and constant space is 26 so we can consider space as O(1)
+
+
+
+The Problem URL is https://leetcode.com/problems/first-unique-character-in-a-string/description/
