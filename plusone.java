@@ -45,3 +45,6 @@ public class plusone {
         System.out.println("]");
     }
 }
+
+//Time - O(N)
+//Space - O(1)

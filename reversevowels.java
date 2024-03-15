@@ -40,3 +40,6 @@ public class reversevowels {
         System.out.println(reversed);
     }
 }
+
+//Time - O(N) -> tarversed every character in the array
+//Space - O(N)-> converting string to char array
