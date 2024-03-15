@@ -28,3 +28,6 @@ public class RemoveVowels {
         System.out.println("Output: " + output);
     }
 }
+
+//Time - O(N) -> traversed the string at once - O(N), and for each voewl call - O(1)
+//Space - O(1) -> the new empty output string not considered as a extra space 
