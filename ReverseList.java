@@ -72,3 +72,6 @@ public class ReverseList {
         System.out.println();
     }
 }
+
+//Time - O(N)-> middle o(n), reverse 2nd part o(n/2), merge o(n/2)
+//Space - O(1)
