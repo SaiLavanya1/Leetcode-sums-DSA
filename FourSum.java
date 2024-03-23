@@ -40,3 +40,6 @@ public class FourSum {
         System.out.println("Closest sum to target: " + closestSum);
     }
 }
+
+//Time - O(N)
+//Space - O(1)
