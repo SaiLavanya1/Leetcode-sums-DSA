@@ -1,4 +1,37 @@
 class Solution {
+   public int[] productExceptSelf(int[] nums) {
+       int n = nums.length;
+       //array for left pass
+       int[] lp = new int[n];
+       //array for rightpass
+       int[] rp = new int[n];
+       //array for both lp and rp
+       int[] ans = new int[n];
+       //calculate left product
+       lp[0] = 1;
+       for(int i =1; i<n; i++){
+           lp[i] = lp[i-1] * nums[i-1];
+       }
+       //calculate right product
+       rp[n-1] = 1; //last element
+       for(int i=n-2; i>=0; i--){        //loop starts from last before element
+           rp[i] = rp[i+1] * nums[i+1];
+       }
+       //for both product
+       for(int i=0;i<n;i++){
+           ans[i] = lp[i] * rp[i];
+       }
+       return ans;
+   }
+}
+
+//Time - left pass O(N),Right pass O(N) -> Total O(N)
+//Space - lp array-O(N), rp array-O(n), result array-O(N) -> Total O(N)
+
+
+BUT WRITE SOLUTION WITHOUT EXTRA SPACE
+
+class Solution {
     public int[] productExceptSelf(int[] nums) {
 
         // The length of the input array 
